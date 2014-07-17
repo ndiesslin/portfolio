@@ -1,0 +1,1296 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #B7DCEE;
+    text-shadow: none;
+}
+
+::selection {
+    background: #B7DCEE;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*------ glyphs ------*/
+/*------ Special Thanks to Entypo pictograms, by Daniel Bruce — www.entypo.com ------*/
+@font-face {
+    font-family: 'entypo';
+    src: url('../fonts/entypo.eot');
+    src: url('../fonts/entypo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/entypo.woff') format('woff'),
+         url('../fonts/entypo.ttf') format('truetype'),
+         url('../fonts/entypo.svg#quattrocento_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*------ end glyphs ------*/  
+
+/*------- Scrollbar -------*/
+html {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #EFEFEF;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #B7DCEE; 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #B7DCEE;
+}
+
+/*------- cursour style -------*/
+* {
+    text-rendering: optimizeLegibility;
+    cursor: url(/img/cursor.png),url(/img/cursor.png),pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #EFEFEF;
+}
+
+body, html {
+  height: 100%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    z-index: -9999;
+}
+
+#nicholas {
+    font-size: 1.333em;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    color: #EFEFEF;
+    text-align: left;
+}
+
+h3 {
+    font-size: 3em;
+    margin:0;
+}
+
+p {
+    font-size: 1.333em;
+}
+
+em {
+    font-style: normal;
+}
+
+hr {
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+/*--- intro section ---*/
+#intro {
+    background-color: #00416A;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -75.655px;
+    margin-left: -62.5px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+#nav-button {
+    font-family: entypo;
+    text-decoration: none;
+    position: absolute;
+    color: #EFEFEF;
+    /*
+    font-size: 2em;
+    top: .25em;
+    right: .5em;
+    */
+    font-size: 4em;
+    top: 0;
+    right: .6em;
+    text-align: right;
+}
+
+nav {
+    bottom: 0;
+    width: 345px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+nav ul {
+    position: absolute;
+    bottom: 0;
+    background-color: #efefef;
+    margin: 0 auto;
+    padding: 20px 36px 20px 36px;
+    border-radius: 8px 8px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25em;
+    padding: .5em;
+    color: #323132;
+    -webkit-transition: color ease .3s;
+    -moz-transition: color ease .3s;
+    -o-transition: color ease .3s;
+    transition: color ease .3s;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25em;
+    padding: .5em;
+    color: #00416A;
+}
+
+
+#arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-family: entypo;
+    font-size: 4em;
+    text-align: center;
+    background-color: white;
+    line-height: .4em;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    margin-right: 50%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+/*--- about section ---*/
+#about {
+    height: auto;
+    background-color: #323132;
+}
+
+#about-text {
+    padding: 4em;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    top: -.5em;
+}
+
+#about-1 {
+    font-family: 'Bitter', serif;
+    font-size: 2em;
+    line-height: 1.333em;
+    font-weight: 300;
+}
+
+#about-2 {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 300;
+    position: relative;
+    top: 1em;
+    line-height: 1.5em;
+}
+
+/*--- projects section ---*/
+
+#projects {
+    height: auto;
+}
+
+.project-text {
+    width: 585px;
+    float: right;
+}
+
+.project-text a {
+    text-decoration: none;
+    margin-top: .5em;
+    margin-right: .5em;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    background-color: #323132;
+    color: #EFEFEF;
+    padding: .5em 2em;
+    border-radius: 5px;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.project-text a:hover {
+    background-color: #EFEFEF;
+    color: #323132;
+    border-color: #323132;
+}
+
+.project-1 {
+    border-top: solid;
+    border-top-width: 1px;
+    border-color: #323132;
+    padding: 5em 0;
+}
+
+.project-1:first-child {
+    border-top: solid;
+    border-top-width: 0;
+}
+
+.title-tabs {
+    font-family: 'Bitter', serif;
+    line-height:150px;
+    text-align: center;
+    font-size: 3.375em;
+    margin: 0 auto;
+    width: 325px;
+    height: 165px;
+    border-radius: 0 0 20px 20px;
+}
+
+#work-tab {
+    background-color: #323132;
+}
+
+#project-container {
+    color: #323132;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+/*--- footer/ contact ---*/
+
+#contact-tab {
+    background-color: #EFEFEF;
+    color: #323132;
+}
+
+#social-icons {
+    margin: 0 auto;
+    width: 262px;
+}
+
+.social {
+    margin: 0 16px 0 16px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    /*
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    */
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.social:hover {
+    background-position: 0px -50px;
+}
+
+.twitter {
+    background-image: url('../img/tw.svg');
+}
+
+.behance {
+    background-image: url('../img/be.svg');
+}
+
+.linkedin {
+    background-image: url('../img/in.svg');
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#contact {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2em 2em 0 2em;
+}
+
+.form-inputs:focus, .text-area:focus {
+    background-color: #00416A;
+}
+
+.form-inputs {
+    width: 500px;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+    outline:none;
+    background-color: #323132;
+    margin-top: 1.25em;
+    margin-left: -5px;
+    border-radius: 5px;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    color: #EFEFEF;
+}
+
+.text-area {
+    resize: none;
+    height: 200px;
+    background-color: #323132;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    color: #EFEFEF;
+}
+
+.submit {
+    width: 300px;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 1.5em 0 1.5em 100px;
+    background-color: #323132;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #EFEFEF;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.submit:hover, .submit:active {
+    color: #323132;
+    background-color: #EFEFEF;
+    height: 73%;
+    opacity: 1;
+}
+
+#bottom-nav {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+}
+
+#bottom-nav-left {
+    text-align: left;
+    float: left;
+    padding: .5em;
+    padding-left: 1em;
+    margin: 0;
+}
+
+#bottom-nav ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.877em;
+}
+
+#bottom-nav li a {
+    color: #323132;
+    text-decoration: none;
+}
+
+#bottom-nav li {
+    display: inline-block;
+    padding: .5em;
+    margin: 0;
+}
+
+/*------ message ------*/
+
+p.error, p.success {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid;
+}
+
+p.error {
+    background: #ffc0c0;
+    color: #900;
+}
+
+p.success {
+    background: #b3ff69;
+    color: #4fa000;
+}
+/*------ end message ------*/
+
+/* http://tympanus.net/Development/CreativeButtons/ */
+
+::-webkit-input-placeholder {
+   color: #C0C0C0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #C0C0C0;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #C0C0C0;  
+}
+
+:-ms-input-placeholder {  
+   color: #C0C0C0;  
+}
+
+footer {
+    height: auto;
+    background-color: #323132;
+}
+
+@media only screen and (max-width: 480px) {
+  /* 480 =================================================== */
+    h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    p {
+        font-size: 0.889em;
+        line-height: 1.75em;
+    }
+
+    .title-tabs {
+        line-height: 3em;
+        font-size: 1.5em;
+        width: 150px;
+        height: 80px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-text a {
+        font-size: 1em;
+        width: 99%;
+        text-align: center;
+        padding: .75em 0;
+    }
+
+    #project-container {
+        width: 90%;
+    }
+
+    .project-1 {
+        overflow-y: auto;
+        padding: 2em 1em;
+    }
+
+    .project-1 img{
+        width: 100%;
+    }
+
+    #contact {
+        width:80%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .form-inputs {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 1.5em 0 1.5em 0;
+    }
+    #about-text {
+        padding: 2em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-size: .68em;
+    }
+
+    #about-2 {
+        font-size: .593em;
+    }
+
+    #social-icons {
+        width: 160px;
+    }
+
+    .social {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+  /* 480 =================================================== */
+    h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    p {
+        font-size: 0.889em;
+        line-height: 1.75em;
+    }
+
+    .title-tabs {
+        line-height: 3em;
+        font-size: 1.5em;
+        width: 150px;
+        height: 80px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-text a {
+        font-size: 1em;
+        width: 99%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    #project-container {
+        width: 90%;
+    }
+
+    .project-1 {
+        overflow-y: auto;
+        padding: 2em 0;
+    }
+
+    .project-1 img{
+        width: 100%;
+    }
+
+    #contact {
+        width:90%;
+    }
+
+    .form-inputs {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 1.5em 0 1.5em 0;
+    }
+    #about-text {
+        padding: 2em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 380px;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-size: .68em;
+    }
+
+    #about-2 {
+        font-size: .593em;
+    }
+
+    #social-icons {
+        width: 160px;
+    }
+
+    .social {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  /* 600 =================================================== */
+    h3 {
+        margin-top: 1em;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.889em;
+        line-height: 1.75em;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-text a {
+        font-size: 1em;
+        width: 578px;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    #project-container {
+        width: 580px;
+    }
+
+    .project-1 {
+        overflow-y: auto;
+        padding: 3em 0;
+    }
+
+    .project-1 img{
+        width:100%;
+    }
+
+    .title-tabs {
+        font-size: 2em;
+        width: 200px;
+        height: 100px;
+        line-height: 3em;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #contact {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-inputs {
+        width: 500px;
+        font-size: 1.5em;
+        padding: 5px;
+        font-family: 'Merriweather Sans', sans-serif;
+        outline:none;
+        background-color: #323132;
+        margin-top: 1.25em;
+        margin-left: -5px;
+        border-radius: 5px;
+        border-color: #EFEFEF;
+        border-width: 1px;
+        border-style: solid;
+        color: #EFEFEF;
+    }
+
+    .submit {
+        width: 300px;
+        font-size: 1.5em;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        margin: 1.5em 0 1.5em 100px;
+        background-color: #323132;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #EFEFEF;
+        border-color: #EFEFEF;
+        border-width: 1px;
+        border-style: solid;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    #about-text {
+        padding: 4em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 480px;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-size: 1.1em;
+    }
+
+    #about-2 {
+        font-size: .667em;
+    }
+
+    #social-icons {
+        margin: 0 auto;
+        width: 262px;
+    }
+
+    .social {
+        margin: 0 16px 0 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  /* 768 =================================================== */
+    h3 {
+        font-size: 1.75em;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 0.889em;
+        line-height: 1.75em;
+    }
+
+    .project-text {
+        width: 335px;
+    }
+
+    .project-text a {
+        font-size: 1em;
+        padding: .5em 1em;
+        width: auto;
+    }
+
+    #project-container {
+        width: 728px;
+    }
+
+    .project-1 {
+        padding: 5em 0;
+    }
+
+    .project-1 img{
+        width:350px;
+    }
+
+    .title-tabs {
+        font-size: 2em;
+        width: 200px;
+        height: 100px;
+        line-height: 3em;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #about-text {
+        padding: 4em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 600px;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-size: 1.333em;
+    }
+
+    #about-2 {
+        font-size: .889em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+  /* 992 =================================================== */
+    h3 {
+        font-size: 2.25em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.75em;
+    }
+
+    .project-text a {
+        font-size: 1.25em;
+    }
+
+    #project-container {
+        width: 952px;
+    }
+
+    .project-1 img{
+        width:450px;
+    }
+
+    .project-text {
+        width: 445px;
+        float: right;
+    }
+
+    .project-1 {
+        overflow-y: auto;
+        padding: 5em 0;
+    }
+
+    .title-tabs {
+        font-size: 2.75em;
+        width: 250px;
+        height: 145px;
+    }
+
+    #about-text {
+        padding: 4em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 900px;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-size: 2em;
+        line-height: 1.333em;
+    }
+
+    #about-2 {
+        font-size: 1.25em;
+        top: 1em;
+        line-height: 1.5em;
+    }
+
+    #bottom-nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1382px) {
+  /* 1382 =================================================== */
+    h3 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.333em;
+        line-height: 1.5em;
+    }
+
+    #project-container {
+        width: 1200px;
+    }
+
+    .project-text {
+        width: 575px;
+    }
+
+    .project-text a {
+        margin-top: .5em;
+        margin-right: .5em;
+        display: block;
+        float: left;
+        font-size: 1.5em;
+        background-color: #323132;
+        color: #EFEFEF;
+        padding: .5em 2em;
+        border-radius: 5px;
+        border-color: #EFEFEF;
+        border-width: 1px;
+        border-style: solid;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .project-1 img{
+        width:550px;
+    }
+
+    .project-1 {
+        overflow-y: auto;
+        padding: 5em 0;
+    }
+
+    .title-tabs {
+        font-family: 'Bitter', serif;
+        line-height:150px;
+        text-align: center;
+        font-size: 3.375em;
+        margin: 0 auto;
+        width: 325px;
+        height: 165px;
+        border-radius: 0 0 20px 20px;
+    }
+    #about-text {
+        padding: 4em 0;
+        position: relative;
+        margin: 0 auto;
+        width: 900px;
+        top: -.5em;
+    }
+
+    #about-1 {
+        font-family: 'Bitter', serif;
+        font-size: 1.97em;
+        line-height: 1.333em;
+    }
+
+    #about-2 {
+        font-size: 1.25em;
+        position: relative;
+        top: 1em;
+        line-height: 1.5em;
+    }
+
+    #contact {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+
+    .form-inputs {
+        width: 500px;
+        font-size: 1.5em;
+        padding: 5px;
+        font-family: 'Merriweather Sans', sans-serif;
+        outline:none;
+        background-color: #323132;
+        margin-top: 1.25em;
+        margin-left: -5px;
+        border-radius: 5px;
+        border-color: #EFEFEF;
+        border-width: 1px;
+        border-style: solid;
+        color: #EFEFEF;
+    }
+
+    .submit {
+        width: 300px;
+        font-size: 1.5em;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        margin: 1.5em 0 1.5em 100px;
+        background-color: #323132;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #EFEFEF;
+        border-color: #EFEFEF;
+        border-width: 1px;
+        border-style: solid;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    #bottom-nav {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

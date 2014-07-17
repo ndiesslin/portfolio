@@ -1,0 +1,94 @@
+/*
+font-family: 'Bitter', serif;
+font-family: 'Merriweather Sans', sans-serif;
+*/
+/*
+* {
+cursor: url(images/cursor.png),url(images/cursor.png),pointer;
+}
+*/
+* {
+    text-rendering: optimizeLegibility;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h1 {
+    color: white;
+}
+h2 {
+    margin: 0;
+    color: #EFEFEF;
+    text-align: left;
+}
+#about {
+    padding: 4em;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    top: -.5em;
+}
+#about_1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.2em;
+}
+#about_2 {
+    font-size: 1.25em;
+    position: relative;
+    top: 1em;
+}
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -75.655px;
+    margin-left: -62.5px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+/* Slide 1 */
+#slide-1 .bcg {
+    background-color: #00416A;
+    height: 100%;
+    width: 100%;
+}
+/* CSS - Slide 2 */
+#slide-2{
+    height: auto;
+    background-color: #323132;
+    text-align: center;
+}
+/* CSS - Slide 3 */
+#slide-3 .bcg {
+    background-color: #EFEFEF;
+}
+#slide-4 .bcg {
+    background: #323132;
+}
+/*------- Scrollbar -------*/
+html {
+    overflow: auto;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #EFEFEF;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #B7DCEE; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #B7DCEE;
+}

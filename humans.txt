@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Nicholas Diesslin -- Designer/ Developer -- @ndiesslin
+
+# THANKS
+
+    Benjamin Etten -- Super Awesome Mentor -- http://benetten.com/
+    Douglas Brull -- Wonderful Teacher -- @DouglasBrull
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    Sidr, mail form v2 http://jemsmailform.com/

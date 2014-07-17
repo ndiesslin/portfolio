@@ -1,0 +1,49 @@
+/*
+font-family: 'Bitter', serif;
+font-family: 'Merriweather Sans', sans-serif;
+*/
+#sect1 {
+    font-family: 'Bitter', serif;
+}
+#sect2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#fs1 {
+    font-size: 16px;
+}
+#fs2 {
+    font-size: 32px;
+}
+#fs3 {
+    font-size: 36px;
+}
+#fs4 {
+    font-size: 54px;
+}
+#fs11 {
+    font-size: 16px;
+}
+#fs12 {
+    font-size: 32px;
+}
+#fs13 {
+    font-size: 36px;
+}
+#fs14 {
+    font-size: 54px;
+}
+.blackback {
+    padding: 10px;
+    background-color: #323132;
+    color: #efefef;
+}
+.whiteback {
+    padding: 10px;
+    background-color: #efefef;
+    color: #323132;
+}
+.blueback {
+    padding: 10px;
+    background-color: #00416a;
+    color: #efefef;
+}
