@@ -180,8 +180,7 @@ p {
 }
 
 strong {
-    display: inline-block;
-    letter-spacing: 1px;
+    letter-spacing: .03125em;
 }
 
 em {
